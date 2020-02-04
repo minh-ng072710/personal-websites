@@ -1,0 +1,140 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <%-include("./Block/Head")-%>
+<body>
+<header>	
+<div class="container">
+<!-- nav -->
+		<nav class="navbar navbar-expand-lg navbar-light py-4">
+			<!-- logo -->
+			<h1 style="display: none;">
+				<a class="navbar-brand" href="index.html">
+					Website Cá Nhân
+				</a>
+			</h1>
+			<!-- //logo -->
+			<button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- main nav -->
+            <%-include("./Block/Menu")-%>
+			<!-- //main nav -->
+		</nav>
+		<!-- //nav -->
+</div>
+</header>
+		
+<!-- banner -->
+<%-include("./Block/Banner")-%>
+
+<!-- //banner -->	
+
+<!-- about -->
+<%-include("./Block/About")-%>
+
+<!-- about -->
+
+<!-- services -->
+<%-include("./Block/Service")-%>
+
+<!-- //services -->
+
+<!-- experience -->
+<%-include("./Block/Experience")-%>
+
+<!-- //experience -->
+
+<!-- blog -->
+<%-include("./Block/Blog")-%>
+
+<!-- //blog -->
+
+<!-- gallery -->
+<%-include("./Block/Gallery")-%>
+
+  <!-- //gallery --> 
+
+<!-- Testimonials -->
+<%-include("./Block/Tesminator")-%>
+
+<!-- Testimonials -->
+
+<!-- contact -->
+<%-include("./Block/Contact")-%>
+
+<!-- //contact -->
+
+<!-- footer -->
+<%-include("./Block/Footer")-%>
+
+<!-- //footer -->
+
+
+	<!-- js -->
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<!-- //js -->	
+	
+	<!--  light box js -->
+	<script src="js/lightbox-plus-jquery.min.js"> </script> 
+	<!-- //light box js-->
+	<!-- for-Testimonials -->
+	<!-- required-js-files-->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+		<script src="js/owl.carousel.js"></script>
+			<script>
+		$(document).ready(function() {
+		  $("#owl-demo").owlCarousel({
+			items : 1,
+			lazyLoad : true,
+			autoPlay : true,
+			navigation : false,
+			navigationText :  false,
+			pagination : true,
+		  });
+		});
+		</script>
+	<!--//required-js-files-->
+	<!-- //for-Testimonials -->
+
+
+	<!-- start-smoth-scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
