@@ -424,7 +424,7 @@ h3.heading:after {
     margin-bottom: 5px;
 }
 .exp-grids h5,.exp-grid1 h5  {
-    font-size: 16px;
+    font-size: 15px;
     color: #666;
     font-weight: 600;
 }
@@ -1149,4 +1149,8 @@ footer {
 }
 @media(max-width:1080px) {
 	
+}
+ul {
+
+    margin-left: 20px !important;
 }
