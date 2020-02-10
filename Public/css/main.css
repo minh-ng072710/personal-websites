@@ -32,3 +32,25 @@ h2{
     font-size: 20px;
     margin: 20px;
 }
+input, textarea{
+    outline: none;
+    width: 83%;
+    padding: .9em 1em;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #888;
+    border: none;
+    border: 1px solid #777;
+    background: none;
+    margin-bottom: 1.5em;
+    width: 576px;
+    border-radius: 10px;
+    margin-left: 167px;
+    margin-top: -9px;
+}
+label{
+    width: 27%;
+    float: left;
+    color: #333;
+    font-weight: 600;
+}
