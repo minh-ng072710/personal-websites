@@ -1154,3 +1154,15 @@ ul {
 
     margin-left: 20px !important;
 }
+
+#pic{
+    overflow: hidden;
+    position: relative;
+    width: 92%;
+    margin: 19px;
+}
+#title{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
