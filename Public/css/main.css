@@ -34,7 +34,7 @@ h2{
 }
 input, textarea{
     outline: none;
-    width: 83%;
+    width: 74% !important;
     padding: .9em 1em;
     font-size: 15px;
     letter-spacing: 1px;
@@ -192,3 +192,11 @@ div.marquee > div.marquee-text {
       transform: rotate(360deg);
     }
   }
+  #errMsg{
+    margin: -23px;
+    padding-top: 33px;
+  
+  }
+span{
+  margin-left: 171px;
+}

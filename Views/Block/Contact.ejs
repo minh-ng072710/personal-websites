@@ -32,20 +32,29 @@
 			</div>
 			<div class="col-lg-7 mt-lg-0 mt-5 contact-right">
 				<h4 class="mb-4">Gửi Mail Cho Tôi:</h4>
-				<form action="#" method="post">
+				<form action="#" method="post" action="./cu">
 					<label><i class="fa mr-2 fa-user" aria-hidden="true"></i>Họ Tên Của Bạn</label>
-					<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<input onkeyup="expression()" type="text" id="name" name="Name" required="">
+					<span id="errname" class="text-danger font-weight-bold"></span>
 					<div class="clearfix"></div>
 					<label><i class="fas mr-2 fa-envelope-open" aria-hidden="true"></i>Email Của Bạn</label>
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					<input onkeyup="expression()" type="email" id="email" name="Email"   required="">
+					<span id="erremail" class="text-danger font-weight-bold"></span>
+
 					<div class="clearfix"></div>
 					<label><i class="fas mr-2 fa-phone" aria-hidden="true"></i>Số Điện Thoại</label>
-					<input type="text" name="Phone" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
+					<input onkeyup="expression()" type="text" id="phone" name="Phone"  required="">
+					<span id="errphone" class="text-danger font-weight-bold"></span>
+
 					<div class="clearfix"></div>
 					<label><i class="fas mr-2 fa-edit" aria-hidden="true"></i>Lời Nhắn Với Tôi</label>
-					<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-					<input style="width: 110px;
-					font-size: 18px;margin-right: 130px;" id="submit" type="submit" value="Gửi">
+					<textarea onkeyup="expression()" style="    margin-top: 89px;"name="Message"  id="ckeditor"  required=""></textarea>
+					<span id="errmessage" class="text-danger font-weight-bold"></span>
+
+					<button type="button" class="btn btn-dark" style="    margin-top: 20px;
+					margin-left: 360px;
+					width: 110px;
+				">Gửi</button>
 				</form>
 			</div>
 		</div>

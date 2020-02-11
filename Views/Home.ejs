@@ -154,6 +154,13 @@
 	<!-- //here ends scrolling icon -->
 	<!-- start-smoth-scrolling -->
 	<script type="text/javascript" src="../js/main.js"></script>
+	<script src="../ckeditor/ckeditor.js"></script>
+	<script type="text/javascript">
+		CKEDITOR.replace('ckeditor', {
+		  "extraPlugins" : 'imagebrowser',
+			  "imageBrowser_listUrl" : "/files"
+		});
+	  </script>
 </body>
 
 </html>
