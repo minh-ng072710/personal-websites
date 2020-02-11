@@ -20,7 +20,8 @@ function out(){
     `   
 }
 function expression(){
-    const name=document.getElementById('name').value;
+
+    var name=document.getElementById('name1').value;
     const email=document.getElementById('email').value;
     const phone=document.getElementById('phone').value;
     // const message=document.getElementById('message').value;
@@ -49,7 +50,6 @@ function expression(){
         }
 
     }
-
 
     if (email == "") {
         document.getElementById('erremail').innerHTML = ""
