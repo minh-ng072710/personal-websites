@@ -1,4 +1,4 @@
-module.exports=function(app){
+module.exports=function(app,multer){
     app.get("/",(req,res)=>{
         res.render("Home")
     });

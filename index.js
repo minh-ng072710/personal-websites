@@ -7,6 +7,34 @@ app.use(express.static("Public"));
 
 app.listen(process.env.PORT || 3000)
  
+
+//body-parser
+const bodyParser=require('body-parser');
+app.use(bodyParser.urlencoded({extended:false}));
+
+//multer
+var multer  = require('multer');
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, 'Public/upload')
+    },
+    filename: function (req, file, cb) {
+      cb(null, Date.now()  + "-" + file.originalname)
+    }
+});  
+var upload = multer({ 
+    storage: storage,
+    fileFilter: function (req, file, cb) {
+        console.log(file);
+        if(file.mimetype=="image/bmp" || file.mimetype=="image/png"){
+            cb(null, true)
+        }else{
+            return cb(new Error('Only image are allowed!'))
+        }
+    }
+}).single("avatar");
+
+
 //monogodb
 const mongoose = require('mongoose');
 
@@ -24,4 +52,4 @@ async function MGDB(){
 
 } 
 MGDB()
-require("./Routes/Personal")(app)
+require("./Routes/Personal")(app,multer)
