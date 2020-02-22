@@ -49,8 +49,7 @@ img{
 
 /* header */
 
-.navbar {
-}
+
 
 header h1 {
     line-height: 0;
@@ -843,7 +842,7 @@ footer {
 		background: rgba(0, 0, 0, 0.7);
 	}
 	.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-		width: 30%;
+		width: 20%;
 		margin: 0 auto;
 	}
 	.navbar-light .navbar-nav .dropdown-menu a.nav-link,.navbar-light .navbar-nav .nav-link{
@@ -999,8 +998,32 @@ footer {
 	}
 	.agile_banner_margin {
 		padding: 8em 2em 0em;
-	}
+    }
+    .navbar{
+        margin-left: -15px;
+    }
+    .navbar-toggler{
+        margin-left: 344px;
+    }
+    .navbar-toggler-icon{
+        margin-left: -8px;
+
+    }
+    .friend{
+        margin-left: -31px;
+
+    }
+    .banneimg{
+        /* max-width: 100%; */
+/* height: 209px; */
+border-radius: 12%;
+background-size: cover;
+border-bottom-color: black;
+margin-bottom: 25px;
+margin-top: -24px !important;
 }
+}
+
 @media(max-width:384px) {
 	.agile_banner_info h2 {
 		font-size: 27px;
@@ -1040,7 +1063,8 @@ footer {
 	}
 	.agile_banner_info h5 {
 		font-size: 18px;
-	}
+    }
+   
 }
 @media(max-width:1080px) {
 	

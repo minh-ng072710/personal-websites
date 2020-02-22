@@ -5,4 +5,8 @@ module.exports=function(app,multer){
     app.post("/custumersendemail",(req,res)=>{
         
     })
+    app.get("/test",(req,res)=>{
+        res.render("index")
+    });
+
 }
